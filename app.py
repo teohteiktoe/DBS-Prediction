@@ -1,21 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[24]:
-
-
 from flask import Flask
-
-
-# In[25]:
-
-
 app = Flask(__name__)
-
-
-# In[26]:
-
-
 from flask import request, render_template
 import joblib
 
@@ -32,15 +16,8 @@ def index():
     else:
         return(render_template("index.html", result="2"))
 
-
-# In[ ]:
-
-
 if __name__ == "__main__":
     app.run()
-
-
-# In[ ]:
 
 
 
