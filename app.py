@@ -8,7 +8,7 @@ def index():
     if request.method == "POST":
         rates = request.form.get("rates")
         print(rates)
-        model = joblib.load("DBS")
+        model = joblib.load("DBSDT")
         pred = model.predict([[float(rates)]])
         print(pred)
         s = "The predicted DBS share price is " + str(pred[0][0])
