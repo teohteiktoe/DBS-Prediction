@@ -11,7 +11,7 @@ def index():
         pred1 = model1.predict([[float(rates)]])
         model2 = joblib.load("DBSDT")
         pred2 = model2.predict([[float(rates)]])
-        mode3 = joblib.load("DBSNN")
+        model3 = joblib.load("DBSNN")
         pred3 = model3.predict([[float(rates)]])
         s1 = "The predicted DBS share price using regression is " + str(pred1)
         s2 = "The predicted DBS share price using Decision Tree is " + str(pred2)
